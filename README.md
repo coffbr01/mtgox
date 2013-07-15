@@ -1,5 +1,8 @@
 Mt.Gox Mobile
 =====
+
+License
+=====
 This file is part of Mt.Gox Mobile.
 
 Mt.Gox Mobile is free software: you can redistribute it and/or modify
@@ -16,6 +19,8 @@ You should have received a copy of the GNU General Public License
 along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 Copyright © 2013 Brien Coffield
-=====
 
+Description
+=====
 This is a WebView wrapper around m.mtgox.com.
+
