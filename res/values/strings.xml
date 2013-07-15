@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="about_long">Not affiliated with Mt.Gox in any way. For your security (and peace of mind), the source code for this app can be viewed below.</string>
+    <string name="app_name">Mt.Gox</string>
+    <string name="view_source">View Source</string>
+</resources>
+
