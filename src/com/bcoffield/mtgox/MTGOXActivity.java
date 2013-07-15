@@ -29,6 +29,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class MTGOXActivity extends Activity {
     private Dialog dialog;
@@ -39,6 +40,13 @@ public class MTGOXActivity extends Activity {
         setContentView(R.layout.main);
         WebView wv = (WebView) findViewById(R.id.webView);
         wv.getSettings().setJavaScriptEnabled(true);
+        wv.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
         wv.loadUrl("https://m.mtgox.com");
     }
 
