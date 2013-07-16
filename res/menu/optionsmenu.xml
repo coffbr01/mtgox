@@ -21,4 +21,9 @@
     <item android:id="@+id/about"
           android:title="@string/about"
           android:showAsAction="always"/>
+    <!--
+    <item android:id="@+id/test"
+          android:title="BOO"
+          android:showAsAction="always"/>
+    -->
 </menu>

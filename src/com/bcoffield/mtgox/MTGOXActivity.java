@@ -33,6 +33,7 @@ import android.webkit.WebViewClient;
 
 public class MTGOXActivity extends Activity {
     private Dialog dialog;
+    private WebSocket socket;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,8 @@ public class MTGOXActivity extends Activity {
             }
         });
         wv.loadUrl("https://m.mtgox.com");
+//        socket = new WebSocket("ws://echo.websocket.org");
+//        socket.connect();
     }
 
     @Override
@@ -63,6 +66,9 @@ public class MTGOXActivity extends Activity {
             case R.id.about:
                 showAboutDialog();
                 return true;
+//            case R.id.test:
+//                socket.send("BOOOO");
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
