@@ -33,12 +33,13 @@ import android.webkit.WebViewClient;
 
 public class MTGOXActivity extends Activity {
     private Dialog dialog;
+    private WebView wv;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        WebView wv = (WebView) findViewById(R.id.webView);
+        wv = (WebView) findViewById(R.id.webView);
         wv.getSettings().setJavaScriptEnabled(true);
         wv.setWebViewClient(new WebViewClient() {
             @Override
@@ -55,6 +56,11 @@ public class MTGOXActivity extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.optionsmenu, menu);
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        wv.goBack();
     }
 
     @Override

@@ -18,13 +18,22 @@
     Copyright © 2013 Brien Coffield
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
     <WebView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/webView"/>
+    <com.google.ads.AdView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        ads:adUnitId="a152001313ec7eb"
+        ads:adSize="BANNER"
+        ads:testDevices="emulator-5554"
+        ads:loadAdOnCreate="true"/>
 </LinearLayout>
 
